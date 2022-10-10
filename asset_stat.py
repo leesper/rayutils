@@ -6,11 +6,11 @@ ASSET_COM_COL = 'M' # 所属公司
 ASSET_RES_COL = 'V' # 盘点结果
 ASSET_AVL_COL = 'W' # 是否生效
 
-RESULT_FILE = 'CUX_新资产盘点结果.xlsx'
+RESULT_FILE = 'CUX_新资产盘点结果_10_10.xlsx'
 
 def main():
     # 读excel表中所有记录
-    source = openpyxl.load_workbook('CUX_新资产盘点表_公司7.11.xlsx')
+    source = openpyxl.load_workbook('CUX_新资产盘点表_10_10.xlsx')
     data = source.active
 
     # 过滤，只取是否生效为Y的记录，包括资产编号、所属公司和盘点结果
